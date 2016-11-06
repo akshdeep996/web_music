@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Player</title>
+</head>
+    
+<body>
+<ul class="playControls__controls sc-list-nostyle g-dark sc-clearfix">
+      <li class="playControls__playPauseSkip">
+        <button class="skipControl playControls__icon sc-ir skipControl__previous">Skip to previous</button>
+        <button title="Pause current" tabindex="" class="playControl playControls__icon sc-ir playing">Pause current</button>
+        <button tabindex="" class="skipControl playControls__icon sc-ir skipControl__next">Skip to next</button>
+      </li>
+      <li class="playControls__repeat">
+        <button class="repeatControl sc-ir" title="Repeat playing track">Repeat track</button>
+      </li>
+      <li class="playControls__timeline sc-clearfix">
+        <div class="playbackTimeline sc-clearfix is-scrubbable has-sound"><div class="playbackTimeline__timePassed"><span class="sc-visuallyhidden">Current time: 33 seconds</span><span aria-hidden="true">0:33</span></div>
+<div aria-valuetext="33 seconds" aria-valuenow="33006.394" aria-valuemax="179293" class="playbackTimeline__progressWrapper" role="progressbar">
+  <div class="playbackTimeline__progressBackground"></div>
+  <div style="width: 93px;" class="playbackTimeline__progressBar"></div>
+  <div style="left: 93px;" class="playbackTimeline__progressHandle sc-ir"></div>
+</div>
+<div class="playbackTimeline__duration"><span class="sc-visuallyhidden">Duration: 2 minutes 59 seconds</span><span aria-hidden="true">2:59</span></div>
+<div class="playbackTimeline__snippetIndicator">
+  <span class="sc-snippet-badge sc-snippet-badge-small">Preview</span>
+</div>
+</div>
+      </li>
+        <li class="playControls__volume">
+          <div data-level="10" class="volume"><div class="sc-visuallyhidden">Volume</div>
+<div class="volume__iconWrapper">
+  <button class="volume__button volume__speakerIcon sc-ir">
+    Toggle mute
+  </button>
+</div>
+
+<div class="sc-hidden" id="volume__sliderDescription">Use shift and the arrow up and down keys to change the volume.</div>
+<div class="volume__sliderWrapper" role="slider" aria-valuemin="0" aria-valuemax="1" aria-label="Volume" aria-valuenow="1">
+  <div class="volume__sliderBackground"></div>
+  <div style="height: 92px;" class="volume__sliderProgress"></div>
+  <div style="top: 10px;" class="volume__sliderHandle"></div>
+</div>
+</div>
+        </li>
+    </ul>
+    </body>
