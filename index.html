@@ -17,6 +17,9 @@
     <!-- icon -->
     
     <!-- Fonts -->
+    
+    <link href="http://fonts.googleapis.com/css?family=Leckerli+One|Coustard:900" rel="stylesheet" type="text/css" />
+    <link href="http://fonts.googleapis.com/css?family=Abel|Medula+One" rel="stylesheet" type="text/css" />
 <link href="http://fonts.googleapis.com/css?family=Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
@@ -26,6 +29,12 @@
     <!-- Javascript-->
     <script src="effect.js"></script>
 
+    <!--jquery-->
+      <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
     <!--Music player -->
   
     
@@ -36,11 +45,14 @@
 <div class="container-fluid">
 <div class ="lside">
     
-    <h3 class="text-center"> Maximus Player </h3>
- 
+    <h1 class="text-center" style="color:#EAC67A; font-family:'Lobster'"> Maximus Player </h1>
     
-  <h1>Animated Music Player</h1>
-  <h2>Music Composed with Figure</h2>
+  
+    <h2 class="text-center" style="color:white; font-family:'Alegreya'; " >Now Playing</h2>
+   <h2 class="text-center">Don't let me down</h2>
+    </br>
+    </br></br>
+    </br>
   <div class="spinner-wrap">
     <div class="spinner-outer"></div>
     <div class="spinner-center"></div>
@@ -48,15 +60,14 @@
   </div>
   
   <audio loop="loop" data-bpm="160">
-    <source src="audio/chain.mp3" type="audio/mp3" />
+    <source src="audio/animals.mp3" type="audio/mp3" />
     
   </audio>
-    
-    
+ 
     </div>
     <div class="first">
         
-        <h1> &nbsp; &nbsp; <img src="maximus.png" alt="Maximus" height="70" width="45"> &nbsp; MaxiMus  
+        <h1> &nbsp; <img src="images/max.png" alt="Maximus" height="70" width="45"> MaxiMus  
             </h1>
 </div>
         <!-- Header End-->
@@ -68,8 +79,8 @@
 
 <div class="rside">
     
-    <h2>Songs</h2>
-  <ul class="nav nav-pills nav-justified">
+    
+  <ul class="nav nav-tabs nav-justified" style="font-size:1.5em; color: #4da6ff;">
     <li class="active"><a data-toggle="pill" href="#top">Top</a></li>
     <li><a data-toggle="pill" href="#english"> English </a></li>
     <li><a data-toggle="pill" href="#hindi"> Hindi </a></li>
@@ -78,7 +89,20 @@
   
   <div class="tab-content">
     <div id="top" class="tab-pane fade in active">
-      <h3>Top</h3>
+        <br/>
+<div class="row">
+    <div class="col-md-4"><a href="#"><img src="img/int_top20.jpg"/></a><br><h4>&nbsp;&nbsp;International<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;top 20</h4> </div>
+    <div class="col-md-4" ><a href="#"><img src="img/us.jpg"/ height="70%" width="70%"></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;US/UK <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top40</h4></div>
+    <div class="col-md-4"><a href="#"><img src="img/dance20.jpg"/></a> <br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dance <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Top 20</h4></div>
+  </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4"><a href="#"><img src="img/bolly.jpg"></a><br><h4>&nbsp;&nbsp;&nbsp;Bollywood</h4></div>
+            <div class="col-md-4"><a href="#"><img src="img/kanada.jpg"><br></a><h4>&nbsp;&nbsp;&nbsp;&nbsp;Kannada</h4></div>
+            <div class="col-md-4"><a href="#"><img src="img/malyalam.jpg"></a><br><h4>&nbsp; &nbsp; Malayalam</h4></div>
+  </div>
+        
+      <!-- <h3>Top</h3>
         <h3> THE CHAINSMOKERS Closer </h3>
       <p>  Hey, I was doing just fine just before I met you...<br/>
 I drank too much and that's an issue but I'm okay<br/>
@@ -101,10 +125,25 @@ From your roommate back in Boulder<br/>
 We ain't ever getting older<br/>
 
 </p>
+-->
     </div>
     <div id="english" class="tab-pane fade">
-      <h3>English</h3>
-      <h3>  CHARLIE PUTH Dangerously </h3>
+      <br>
+        
+     <div class="row">
+    <div class="col-md-4"><a href="#"><img src="img/int_top20.jpg"/></a><br><h4>&nbsp;&nbsp;&nbsp;International<br> &nbsp;&nbsp;&nbsp;&nbsp;top 20</h4> </div>
+    <div class="col-md-4" ><a href="#"><img src="img/edm20.jpg"/></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDM </h4></div>
+    <div class="col-md-4"><a href="#"><img src="img/ldance.jpg"/></a> <br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dance</h4></div>
+  </div>
+        <br>
+        <div class="row">
+    <div class="col-md-4"><a href="#"><img src="img/martin.jpg"></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;Martin Garrix</h4></div>
+    <div class="col-md-4"><a href="#"><img src="img/maroon5.jpg"></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maroon5</h4></div>
+    <div class="col-md-4"><a href="#"><img src="img/bryan.jpg"></a><br><h4>&nbsp; &nbsp;&nbsp;Bryan Adams </h4></div>
+  </div>
+
+        
+        <!--   <h3>  CHARLIE PUTH Dangerously </h3>
       <p> This is gonna hurt but I blame myself first, cause I ignored the truth<br/>
 Drunk off that love, my head up, there’s no forgetting you<br/>
 
@@ -131,12 +170,26 @@ More than the air that I breathe-e-e-e-e-e-e-e-e<br/>
 Knew we would crash at the speed that we were going<br/>
 Didn’t care if the explosion ruined me-e-e-e-e-e-e-e-e<br/>
 Baby I loved you dangerously<br/>
-
+-->
  </p>
     </div>
     <div id="hindi" class="tab-pane fade">
-      <h3>Hindi </h3>
-        <h3> Befikre </h3>
+      <br>
+    
+  <div class="row">
+    <div class="col-md-4"><a href="#"><img src="img/bolly.jpg"/></a><br><h4>&nbsp;&nbsp;&nbsp;Bollywood<br> &nbsp;&nbsp;&nbsp;&nbsp;top 20</h4> </div>
+    <div class="col-md-4" ><a href="#"><img src="img/arehman.jpg"/></a><br><h4>&nbsp;&nbsp;&nbsp;AR Rahman </h4></div>
+    <div class="col-md-4"><a href="#"><img src="img/arijit.jpg"/></a> <br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Arijit</h4></div>
+  </div>
+        <br>
+        <div class="row">
+            <div class="col-md-4"><a href="#"><img src="img/force2.jpg"></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;Force2</h4></div>
+            <div class="col-md-4"><a href="#"><img src="img/rock.jpg"></a><br><h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rock</h4></div>
+            <div class="col-md-4"><a href="#"><img src="img/zindagi.jpg"></a><br><h4>&nbsp; &nbsp;&nbsp; Zindagi</h4></div>
+  </div>
+  
+        
+        <!--     <h3> Befikre </h3>
         <p> Kafirana dil is duniya ka kya hai pata<br/>
 Raat ki dua me khuda b mil jaaye to kya<br/>
 
@@ -176,21 +229,52 @@ Befikri me khona jaruri hai,,<br/>
 Thodi bemaaniyaan ho<br/>
 Door preshaniyaan ho<br/>
 Jaake diniyaa se kehdo zara<br/>
- </p>
+ </p>-->
     </div>
    
   </div>
         
 </div>  
     
+    
     <!-- media player -->
-<!--
+
     <div class="footer navbar-fixed-bottom player">
     
-    Now playing
+    <div class="row">
+    
+    <div class="col-md-1" >        
+<img src="img/ep.jpg" height="75" width="75">
+        </div>  
+    
+        <div class="col-md-2" style="font-size:1.2em; "> 
+        
+            <p><b>Closer </b><br>College Ep</p>
+            
+        </div>
+        
+        <div class="col-md-5"style="background-color:yellow;">
+        </div>
+    <div class="col-md-4"style="font-size:2em; padding-left:10%;padding-top:2%; ">
+        
+        
+            <span class="glyphicon glyphicon-backward"></span> &nbsp;&nbsp;&nbsp;&nbsp;
+            
+          <span class="glyphicon glyphicon-play" onclick=""><a>  <audio loop="loop" data-bpm="160">
+    <source src="audio/animals.mp3" type="audio/mp3" />
+    
+  </audio>
+</a></span>
+        
+          &nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-forward"  style="height:30px"></span>
+        
+        </div>
+  
+        </div>
+        
     
     </div>
-    -->
+
     </div>
     
     

@@ -1,5 +1,13 @@
-$( document ).ready(function() {
+/*$( document ).ready(function() {
 
+    document.
+    
+    
+    
+    
+    
+});    
+*/
   $('.spinner-wrap').click(function() {
     
     var $this = $(this),
@@ -23,8 +31,8 @@ $( document ).ready(function() {
       
     }
     
-    
-    /*function pulsing() {
+   
+    function pulsing() {
       
       $this.addClass('pulse');
       
@@ -33,8 +41,7 @@ $( document ).ready(function() {
       }, pulse-100);
       
     }
-    */
+
     
   });
-
-});
+   
