@@ -1,47 +1,27 @@
-/*$( document ).ready(function() {
+$(document).ready(function(){
+    
 
-    document.
-    
-    
-    
-    
-    
-});    
-*/
-  $('.spinner-wrap').click(function() {
-    
-    var $this = $(this),
-        audio = $this.siblings('audio')[0],
-        bpm = Number($this.siblings('audio').data('bpm'))
-        pulse = (160/bpm)*1000;
-    
-    
-    if (audio.paused === false) {
-      audio.pause();
-      audio.currentTime = 0;
-      $this.removeClass('playing');
-      clearInterval(intervals);
-    }
-    
-    else {
-      audio.play();
-      $this.addClass('playing');
-      pulsing();
-      intervals = setInterval(function() {pulsing()}, pulse);
-      
-    }
-    
-   
-    function pulsing() {
-      
-      $this.addClass('pulse');
-      
-      setTimeout(function() {
-        $this.removeClass('pulse');  
-      }, pulse-100);
-      
-    }
+
+$('#idj-play-button').click(function() {
+  document.getElementById('peaks-audio').play();
+  $('#idj-play-button').addClass('hide');
+  $('#idj-pause-button').removeClass('hide');
+});
+                        
+$('#idj-pause-button').click(function() {
+  document.getElementById('peaks-audio').pause();
+  $('#idj-pause-button').addClass('hide');
+  $('#idj-play-button').removeClass('hide');
+});
+
+$('#peaks-audio').on('ended', function() {
+  $('#idj-pause-button').addClass('hide');
+  $('#idj-play-button').removeClass('hide');
+  $('#peaks-audio').load();
+});
 
     
-  });
-   
+
+    });
+
+

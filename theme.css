@@ -67,6 +67,14 @@ html { overflow-y: hidden;
 /*    border-top: 5px solid #e85e09;*/
 }
 
+audio {
+    width:800px;
+    padding-top: 6%;
+
+}
+
+
+
 
 /*#intl:hover{
     background-image: url('img/edm20.jpg') center,url('img/party.jpg');
