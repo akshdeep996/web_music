@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<style>
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.container {
+    padding: 16px;
+}
+
+</style>
+
+<body>
+<div align="center">
+
+<h2 class="logg">Login Form</h2>
+
+<form action="signin.php" method="post">
+<br>
+    <label><b>Username: &nbsp;</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+<br><br>
+    <label><b>Password &nbsp;&nbsp;&nbsp;</b></label>
+    <input type="password" placeholder="Enter Password" name="pwd" required>
+    <br>    
+  <div class="container">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit">Login</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <button type="reset" class="cancelbtn" >Cancel</button>
+
+  </div>
+</form>
+    
+<div class="register">
+<h2 class="logg">Register</h2>
+
+<form action="signup.php" method="post">
+
+    <label><b>First Name: &nbsp;</b></label>
+    <input type="text" placeholder="First name" name="name" required>
+<br>
+    <label><b>Last Name &nbsp;&nbsp;&nbsp;</b></label>
+    <input type="text" placeholder="Enter lastname" name="lname" required>
+    <br>    
+
+        <label><b>Username: &nbsp;</b></label>
+    <input type="text" placeholder="akshdeep96" name="uname" required>
+<br>
+        <label><b>Password &nbsp;&nbsp;&nbsp;</b></label>
+    <input type="password" placeholder="Choose Password" name="pwd" required>
+<br>
+        <label><b>email: &nbsp;</b></label>
+    <input type="email" placeholder="akshdeep@gmail.com" name="email" required>
+    <br>
+
+        <label><b>Phone: &nbsp;</b></label>
+    <input type="text" placeholder="Contact no" name="phone">
+<br>
+    <label><b>Gender: &nbsp;</b></label>
+    <input type="text" placeholder="male" name="gender">
+<br>
+        <label><b>Location: &nbsp;</b></label>
+    <input type="text" placeholder="Bangalore" name="location">
+    
+    
+    <div class="container">
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button type="submit">Register</button>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;      <button type="reset" class="cancelbtn" >Cancel</button>
+
+  </div>
+</form>
+</div>    
+    </div>
+</body>
+</html>
